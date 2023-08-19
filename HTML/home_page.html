@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoutEasy</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/home_page.css" />
+    <link rel="icon" href="/IMAGE/RoutEasys.png" type="image/png">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo"><img src="/IMAGE/RoutEasys.png" alt="" /></div>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/HTML/home_page.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/HTML/Feedback_page.html">Feedback</a></li>
+            <li><a href="http://127.0.0.1:5500/HTML/About_page.html">About</a></li>
+          </ul>
+          </div>
+        </nav>
+      </header>
+    <div class="container">
+      <div class="input-box">
+        <div class="box">
+          <h2>Your Location</h2>
+          <input
+            type="text"
+            class="locationInput"
+            placeholder="Enter your location"
+          />
+        </div>
+
+        <div class="box" id="destinations">
+          <h2>Destinations</h2>
+          <input
+            type="text"
+            class="destination-input"
+            placeholder="Enter destination"
+          />
+        </div>
+      </div>
+
+      <div class="options">
+        <button class="add-button" onclick="addDestination()">Add</button>
+        <button class="submit-button" onclick="submitDestinations()">
+          Submit
+        </button>
+      </div>
+
+    
+    <div id="map" class="map-box">
+      <p id="mapText"><img src="/IMAGE/map_before.jpg" alt="" srcset=""></p>
+    </div>
+  </div>
+    <script src="/JAVASCRIPT/home_page.js"></script>
+  </body>
+  <footer class="flex-all-center">
+    <p>Copyright &copy;; RoutEasy.com</p>
+  </footer>
+</html>
